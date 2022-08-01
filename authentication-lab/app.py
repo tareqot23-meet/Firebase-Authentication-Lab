@@ -12,11 +12,11 @@ config={
   'messagingSenderId': "986265167518",
   'appId': "1:986265167518:web:449e75122da49e2ab47d8f",
   'measurementId': "G-D1HYL46KN7",
-  'databaseURL':''
+  'databaseURL':'https://test-91859-default-rtdb.europe-west1.firebasedatabase.app/'
     }
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
-
+db = firebase.database()
 app = Flask(__name__, template_folder='templates', static_folder='static')
 app.config['SECRET_KEY'] = 'super-secret-key'
 
@@ -41,6 +41,7 @@ def signin():
 def signup():
     error = ''
     if request.method == 'POST':
+        full_name:request.form['full_name']
         email= request.form['email']
         password= request.form['password']
         try:
