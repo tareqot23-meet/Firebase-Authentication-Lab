@@ -6,13 +6,14 @@ import pyrebase
 
 config={
     
-  "apiKey": "AIzaSyCeM92vdtvp-XPDiITvz4tMg45SJ_HeOSc",
-  "authDomain": "layan-zahrawi.firebaseapp.com",
-  "projectId": "layan-zahrawi",
-  "storageBucket": "layan-zahrawi.appspot.com",
-  "messagingSenderId": "819872730920",
-  "appId": "1:819872730920:web:d569fcb1d4c3abe0eb0a1d",
-  "measurementId": "G-1BQHYQJ52W",
+  "apiKey": "AIzaSyBGljqzVxqgTRfap9LLgYcZwlmxWWgPzTk",
+  "authDomain": "test-91859.firebaseapp.com",
+  "databaseURL": "https://test-91859-default-rtdb.europe-west1.firebasedatabase.app",
+  "projectId": "test-91859",
+  "storageBucket": "test-91859.appspot.com",
+  "messagingSenderId": "110938425702",
+  "appId": "1:110938425702:web:1b947c5c1f229d9173e0a7",
+  "measurementId": "G-YMJ8Q21MK7"
   "databaseURL": "https://test-91859-default-rtdb.europe-west1.firebasedatabase.app/"
 
 }
