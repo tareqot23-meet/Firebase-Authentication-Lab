@@ -14,7 +14,7 @@ config={
   "messagingSenderId": "110938425702",
   "appId": "1:110938425702:web:1b947c5c1f229d9173e0a7",
   "measurementId": "G-YMJ8Q21MK7"
-  "databaseURL": "https://test-91859-default-rtdb.europe-west1.firebasedatabase.app/"
+  
 
 }
 
@@ -98,7 +98,7 @@ def add_tweet():
 
         
         try:
-            tweet={"text":text,"title":title,"uid":login_session['user']['localId']}
+            tweet={"text":text,"title":title}
             db.child("tweets").push(tweet)
             
             return redirect(url_for('all_tweets'))
@@ -118,7 +118,7 @@ def add_tweet():
 
 @app.route('/all_tweets')
 def all_tweets():
-    tweets=db.child("tweets").get().val()
+    tweets=db.child("tweets").get().val().values()
     return render_template("tweets.html",tweets=tweets)
 
 
